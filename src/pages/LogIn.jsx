@@ -48,6 +48,10 @@ export default function () {
             value={formData.password}
             onChange={e=>changeData('password', e.target.value)} />
 
+            {loginError !== null && <div style={{color:"red"}}>{loginError.message}</div>}
+            {loginError?.errors && loginError.errors.map((err, index) => (
+                <div key={`err${index}`}>{err.msg}</div>
+            ))}
             <button>Accedi</button>
         </form>
         </>
