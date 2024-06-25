@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all-container {
+    display: flex;
+   height: 100vh;
+    width: 100%;
+  }
+  
+  .form-section {
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    background-color: #CAF7E2; /* Colore di sfondo chiaro del form */
+    color: #386150; /* Colore del testo nel form */
+  }
+  
+  .posts-section {
+    height: 100%;
+   flex-grow: 1;
+    padding: 20px;
+    background-color: #58B09C; /* Colore di sfondo scuro dei post */
+    color: #3D3522; /* Colore del testo nei post */
+  }
+  
+  .form-container {
+    background-color: #CAF7E2; /* Colore di sfondo chiaro del form interno */
+    padding: 20px;
+    border-radius: 12px solid #3D3522; /* Angoli arrotondati */
+  }
+  
+  .input-css {
+
+    margin-bottom: 10px;
+    color: #3D3522; /* Colore del testo degli input */
+    padding:10px ;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .container-input-img{
+    padding: 0px;
+    
+  }
+  .input-img{
+    border-radius: 12px;
+    background-color: white;
+    
+  }
+  
+  
+  .input-css input[type="text"],
+  .input-css input[type="number"],
+  .input-css input[type="file"],
+  .input-css select,
+  .input-css textarea,
+  .input-update  {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #386150; /* Bordo scuro */
+    border-radius: 12px;
+   
+    color: #3D3522; /* Colore del testo */
+    outline: none; /* Rimuove il bordo di focus */
+  }
+
+  
+  .button-css {
+    background-color: #386150; /* Colore di sfondo del pulsante */
+    color: #CAF7E2; /* Colore del testo del pulsante */
+    border: 2px solid #3D3522; /* Bordo scuro */
+    border-radius: 8px; /* Angoli arrotondati */
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .ul-css {
+    list-style-type: none; /* Rimuove i puntini dalla lista */
+    padding: 0;
+  }
+  
+  .li-css {
+    background-color: #CAF7E2; /* Colore di sfondo chiaro delle singole righe dei post */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px; /* Angoli arrotondati */
+    border: 2px solid #58B09C; /* Bordo scuro */
+  }
+  
+  .container-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-icon,
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #386150; /* Colore delle icone */
+  }
+
+  
