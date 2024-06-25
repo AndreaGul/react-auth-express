@@ -6,6 +6,7 @@ import PostSingolo from "./components/PostSingolo";
 import LogIn from "./pages/LogIn";
 import Profilo from "./pages/Profilo";
 import PrivatePage from "./middlewares/PrivatePage";
+import EditPost from "./pages/EditPosts";
 import { AuthProvider } from "./contexts/AuthContext";
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import axios from "axios";
@@ -92,7 +93,10 @@ function App() {
               </PrivatePage>
             }>
               <Route path="profilo" element={<Profilo/>}/>
-
+              <Route
+                path="posts/edit/:slug"
+                element={<EditPost fetchPosts={fetchPosts} fetchTags={fetchTags} fetchCategories={fetchCategories} />}
+              />
             </Route>
         </Routes>
       </AuthProvider>
